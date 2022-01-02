@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
                 ('cod', models.CharField(max_length=255)),
                 ('descripcion', models.CharField(max_length=255)),
                 ('nombre', models.CharField(max_length=255)),
+                ('icon', models.CharField(max_length=255)),
             ],
         ),
     ]

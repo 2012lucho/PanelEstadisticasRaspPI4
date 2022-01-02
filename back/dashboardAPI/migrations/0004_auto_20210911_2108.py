@@ -5,23 +5,33 @@ from dashboardAPI.models.tipo_equipos import TipoEquipos
 
 def add_tipo_equipos_regs(apps, schema_editor):
     tipoEquipo = TipoEquipos()
-    tipoEquipo.cod = "CC"
+    tipoEquipo.cod    = "CC"
+    tipoEquipo.nombre = "Camión Cisterna"
+    tipoEquipo.icon   = "static/cc.svg"
     tipoEquipo.save()
 
     tipoEquipo = TipoEquipos()
-    tipoEquipo.cod = "P"
+    tipoEquipo.cod    = "P"
+    tipoEquipo.nombre = "Pala"
+    tipoEquipo.icon   = "static/p.svg"
     tipoEquipo.save()
 
     tipoEquipo = TipoEquipos()
-    tipoEquipo.cod = "LB"
+    tipoEquipo.cod    = "LB"
+    tipoEquipo.nombre = "Lowboy"
+    tipoEquipo.icon   = "static/lb.svg"
     tipoEquipo.save()
 
     tipoEquipo = TipoEquipos()
-    tipoEquipo.cod = "PER"
+    tipoEquipo.cod    = "PER"
+    tipoEquipo.nombre = "Perforadora"
+    tipoEquipo.icon   = "static/per.svg"
     tipoEquipo.save()
 
     tipoEquipo = TipoEquipos()
-    tipoEquipo.cod = "TRAC"
+    tipoEquipo.cod    = "TRAC"
+    tipoEquipo.icon   = "static/trac.svg"
+    tipoEquipo.nombre = "Tractor"
     tipoEquipo.save()
 
 class Migration(migrations.Migration):
